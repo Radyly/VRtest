@@ -1,0 +1,39 @@
+AUPP ETL METAVERSE V3 — GITHUB PAGES (ONE-FILE VR WORLD)
+
+NOTE: This is a self-contained WebGL procedural environment with real 3D geometry,
+not a Gaussian reconstruction of the original video. VR headset mode has not yet
+been tested on a physical Quest 3.
+
+UPGRADE THE EXISTING REPO
+1. Open your VRtest.github.io repo on GitHub (main branch).
+2. Click Add file > Upload files.
+3. Select THIS project's index.html (not the ZIP file).
+   This replaces the existing index.html when you commit.
+4. Commit changes to main.
+5. If Pages is not yet configured: Settings > Pages > Deploy from a branch > main > /(root) > Save.
+6. Open the published Pages URL shown under Settings > Pages.
+
+No CDN, npm, A-Frame, external images or other files needed.
+The three anime concept images are embedded directly inside index.html.
+No server-side build is required. The .nojekyll file is optional.
+
+LOCAL PREVIEW ON UBUNTU
+cd path/to/AUPP_ETL_Metaverse_V3_GitHub
+python3 -m http.server 8000
+Open http://localhost:8000
+
+DESKTOP CONTROLS
+- Click 'Enter the 3D world' on splash screen
+- W/A/S/D: move, mouse: look, 1-5: teleport to zones
+- H: show/hide tour menu, M: show/hide map, Shift: run
+- Theme selector: warm, midnight, pastel
+
+META QUEST 3
+- Open the HTTPS GitHub Pages URL in Meta Quest Browser.
+- Click 'Enter immersive VR · Quest 3'.
+- Left joystick moves, right joystick snap-turns; right B/Y moves among zones.
+- Quest 3 browser, WebXR support and site permissions are required.
+- A local 'http://localhost' on your laptop does NOT map to your headset.
+
+This is a prototype: collisions use broad walkable regions, model details are stylized and approximate,
+and headset performance and controllers need live testing. The website does not include multiplayer.
